@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border: 1.5px solid #111;
+    z-index: 9999;
+    background: transparent;
+    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+}

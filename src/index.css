@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #96A78D; */
+  /* background-color: #F5ECD5; */
+  padding: 0 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: none;
+  position: inherit;
+}

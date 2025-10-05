@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+.page-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.page-content h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    max-width: 1000px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.page-content h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.page-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.page-content a,
+.page-section a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-content a:hover,
+.page-section a:hover {
+    color: #111;
+}
+
+.page-content a.btn,
+.page-section a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-content a.btn-primary,
+.page-section a.btn-primary {
+    background-color: #111;
+    color: #fff;
+}
+
+.page-content a.btn-primary:hover,
+.page-section a.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Secondary-style anchor buttons */
+.page-content a.btn-secondary,
+.page-section a.btn-secondary {
+    background-color: #f0f0f0;
+    color: #111;
+    border: 2px solid #111;
+}
+
+.page-content a.btn-secondary:hover,
+.page-section a.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+/* Image styling */
+.page-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.page-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Button group */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Generic button styles */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #111;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #111;
+}
+
+.btn-secondary:hover {
+    background: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+    .page-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-content {
+        max-width: 100%;
+    }
+
+    .page-image img {
+        max-width: 100%;
+        height: auto;
+        min-height: 280px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-image img {
+        max-width: 100%;
+        min-height: 220px;
+        border-radius: 12px;
+    }
+
+    .page-content h1 {
+        font-size: clamp(1.6rem, 6vw, 2.2rem);
+    }
+
+    .page-content p {
+        font-size: 1rem;
+    }
+}

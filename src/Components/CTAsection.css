@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cta-section {
+    width: 100%;
+    padding: 4rem 2rem 120px;
+    color: #37353E;
+    margin-bottom: clamp(2rem, 5vw, 2.5rem);
+}
+
+.cta-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-wrapper {
+    overflow: hidden;
+}
+
+.cta-wrapper h2 {
+    font-size: clamp(2.7rem, 6vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    color: #37353E;
+}
+
+.cta-wrapper p {
+    font-size: clamp(1.2rem, 5vw, 1.4rem);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+    color: #37353E;
+}
+
+.cta-slides {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.cta-slide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.cta-slide.left {
+    flex-direction: row;
+}
+
+.cta-slide.right {
+    flex-direction: row-reverse;
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cta-img {
+    display: block;
+    width: 180px;
+    height: 120px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cta-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-button-wrapper .btn,
+.cta-button-wrapper .btn:link,
+.cta-button-wrapper .btn:visited,
+.cta-button-wrapper .btn:hover,
+.cta-button-wrapper .btn:active {
+    background: #96A78D;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    /* Remove underline from links */
+    display: inline-block;
+    text-align: center;
+}
+
+.cta-button-wrapper .btn:hover {
+    background: #2d5f34;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .cta-slides {
+        gap: 1rem;
+    }
+
+    .cta-slide {
+        gap: 10px;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+
+    .cta-img {
+        width: 140px;
+        height: 90px;
+        border-radius: 8px;
+    }
+
+    .cta-section {
+        padding: 2rem 1rem 80px;
+    }
+
+    .cta-button-wrapper .btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-button-wrapper .btn {
+        width: 100%;
+    }
+}
