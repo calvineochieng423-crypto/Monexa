@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./CTASection.css";
+import "./CTAsection.css";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
